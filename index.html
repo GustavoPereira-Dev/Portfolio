@@ -29,10 +29,10 @@
       </div>
       <nav class="menu-desktop">
         <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#especialidades">Especialidades</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#portfolio">Projetos</a></li>
+          <li><a href="#inicio" data-i18n="item-desktop1">Início</a></li>
+          <li><a href="#especialidades" data-i18n="item-desktop2">Especialidades</a></li>
+          <li><a href="#sobre" data-i18n="item-desktop3">Sobre</a></li>
+          <li><a href="#portfolio" data-i18n="item-desktop4">Projetos</a></li>
           <li class="nav-item">
             <input type="checkbox" id="dark-change" onclick="toggleDarkMode()">
             <label for="dark-change">
@@ -42,9 +42,9 @@
           </li>
             <li>
               <select id="slcDesk">
-                <option value="pt-br">pt-br</option>
-                <option value="eng">Inglês</option>
-                <option value="spn">Espanhol</option>
+                <option value="pt-br" data-i18n="lg-ptbr">pt-br</option>
+                <option value="eng" data-i18n="lg-eng">Inglês</option>
+                <option value="spn" data-i18n="lg-spn">Espanhol</option>
               </select>
             </li>
          </ul>
@@ -52,7 +52,7 @@
       </nav>
       <div class="btn-contato">
         <a href="#form">
-          <button>Contato</button>
+          <button data-i18n="button-desktop">Contato</button>
         </a>
       </div>
 
@@ -65,11 +65,11 @@
         </div>
         <nav>
             <ul>
-              <li class="click"><a href="#inicio">Início</a></li>
-              <li class="click"><a href="#especialidades">Especialidades</a></li>
-              <li class="click"><a href="#sobre">Sobre</a></li>
-              <li class="click"><a href="#portfolio">Projetos</a></li>
-              <li class="click"><a href="#form">Contato</a></li>
+              <li class="click"><a href="#inicio" data-i18n="item-mobile1">Início</a></li>
+              <li class="click"><a href="#especialidades" data-i18n="item-mobile2">Especialidades</a></li>
+              <li class="click"><a href="#sobre" data-i18n="item-mobile3">Sobre</a></li>
+              <li class="click"><a href="#portfolio" data-i18n="item-mobile4">Projetos</a></li>
+              <li class="click"><a href="#form" data-i18n="button-mobile">Contato</a></li>
               <li class="nav-item click">
                 <input type="checkbox" id="dark-change" onclick="toggleDarkMode()">
                 <label for="dark-change">
@@ -79,9 +79,9 @@
               </li>
               <li>
                 <select id="slcMb">
-                  <option value="pt-br">pt-br</option>
-                  <option value="eng">Inglês</option>
-                  <option value="spn">Espanhol</option>
+                  <option value="pt-br" data-i18n="lg-ptbr">pt-br</option>
+                  <option value="eng" data-i18n="lg-eng">Inglês</option>
+                  <option value="spn" data-i18n="lg-spn">Espanhol</option>
                 </select>
               </li>
             </ul>
@@ -99,8 +99,8 @@
       <div class="interface">
           <div class="flex">
             <div class="txt-topo-site">                  
-              <h1>O DESENVOLVIMENTO DE SISTEMAS PARA AJUDA E AUXÍLIO GERAL <span>.</span></h1>
-              <p>Do que seria o programador se o mesmo não pudesse abstrair, utilizar a criatividade e inovação com o desejo
+              <h1 data-i18n="top-title">O DESENVOLVIMENTO DE SISTEMAS PARA AJUDA E AUXÍLIO GERAL <span>.</span></h1>
+              <p data-i18n="top-message">Do que seria o programador se o mesmo não pudesse abstrair, utilizar a criatividade e inovação com o desejo
                 de ajudar um aos outros?
                 <br>
                 Um programador, para mim, é como um arquiteto digital. Ele não apenas escreve linhas de código, mas constrói mundos virtuais a partir do nada. É alguém que vê padrões onde outros veem caos, que transforma problemas complexos em desafios estimulantes.
@@ -113,14 +113,14 @@
               </p>
               <div class="btn-contato">
                 <a href="#form">
-                  <button>Entre em Contato</button>
+                  <button data-i18n="contact">Entre em Contato</button>
                 </a>
               </div>
             </div>
             <a href="https://br.freepik.com/vetores-gratis/desenvolvimento-de-novos-aplicativos-para-desktop_10276612.htm#query=programing&position=2&from_view=search&track=sph&uuid=c2a032a3-bf09-49e0-ab95-88e10f36eaa0" target="_blank">
-            <div class="img-topo-site">              
+            <figure class="img-topo-site">              
                 <img src="images/topo1.png" id="img_topo" alt="img-topo"/>
-            </div>
+            </figure>
             </a>
           </div>
       </div>
@@ -128,39 +128,39 @@
 
     <section class="especialidades" id="especialidades">
         <div class="interface">
-            <h2 class="titulo">MINHAS <span>ESPECIALIDADES </span></h2>
+            <h2 class="titulo" data-i18n="title-specialties">MINHAS <span>ESPECIALIDADES </span></h2>
             <div class="flex">
-                <div class="especialidades-box" id="backend">
+                <article class="especialidades-box" id="backend">
                     <i class="bi bi-database"></i>
-                    <h3>Desenvolvimento BackEnd e de banco</h3>
-                    <p>Conhecimento de conexão de banco de dados NoSQL (Firebase) e SQL (MySQL, MariaDb, Postgresql) e em linguagens como PHP (com Laravel), Java (JavaFX, Swing e Conexão SQL), C# e Python, todos com 
+                    <h3 data-i18n="backend-title">Desenvolvimento BackEnd e de banco</h3>
+                    <p data-i18n="backend-desc">Conhecimento de conexão de banco de dados NoSQL (Firebase) e SQL (MySQL, MariaDb, Postgresql) e em linguagens como PHP (com Laravel), Java (JavaFX, Swing e Conexão SQL), C# e Python, todos com 
                       uma compreensão altamente embassada da lógica de programação
                     </p>
-                </div>
-                <div class="especialidades-box" id="frontend">
+                </article>
+                <article class="especialidades-box" id="frontend">
                   <i class="bi bi-code-square"></i>
-                  <h3>Desenvolvimento Web <br> e Client-Side</h3>
-                  <p>Conhecimento intermediário <br> 
+                  <h3 data-i18n="frontend-title">Desenvolvimento Web <br> e Client-Side</h3>
+                  <p data-i18n="frontend-desc">Conhecimento intermediário <br> 
                     em HTML/CSS/JS e frameworks/bibliotecas<br>
                     (Bootstrap,Materialize,React,Next[...])</p>
-              </div>
-                <div class="especialidades-box" id="edition">
+              </article>
+                <article class="especialidades-box" id="edition">
                     <i class="bi bi-pen"></i>
-                    <h3>Edição</h3>
-                    <p>Noção razoável de edições de imagens, cortes, remoção de background e derivados via Gimp</p>
-                </div>
+                    <h3 data-i18n="edition-title">Edição</h3>
+                    <p data-i18n="edition-desc">Noção razoável de edições de imagens, cortes, remoção de background e derivados via Gimp</p>
+                </article>
             </div>
         </div>
     </section>
     <section class="sobre" id="sobre">
         <div class="interface">
             <div class="flex">
-                <div class="img-sobre">
+                <figure class="img-sobre">
                     <img src="images/Gustavo.jpg" alt="Gustavo">
-                </div>
+                </figure>
                 <div class="txt-sobre">
-                    <h2>MUITO PRAZER <span>SOU GUSTAVO PEREIRA</span></h2>
-                    <p>Olá! Meu nome é Gustavo e sou um entusiasta do Desenvolvimento de Sistemas há cerca de 2 anos e tenho uma paixão por criar soluções tecnológicas que impactam positivamente as pessoas.
+                    <h2 data-i18n="title-about">MUITO PRAZER <span>SOU GUSTAVO PEREIRA</span></h2>
+                    <p data-i18n="message-about">Olá! Meu nome é Gustavo e sou um entusiasta do Desenvolvimento de Sistemas há cerca de 2 anos e tenho uma paixão por criar soluções tecnológicas que impactam positivamente as pessoas.
                        <br>
                        Como alguém que já estuda nessa área por um tempo razoável, tenho conhecimentos e experiências diversas, com interesse especialmente no Desenvolvimento de sites Web pelo HTML, JS e um pouco do CSS e na linguagem de servidor PHP.
                        <br>
@@ -184,18 +184,18 @@
 
     <section class="portfolio" id="portfolio">
         <div class="interface">
-            <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+            <h2 class="titulo" data-i18n="title-portfolio">MEU <span>PORTFÓLIO.</span></h2>
             <div class="flex">
                 <!--1920 x 6137-->
-                <div class="img-port" id="Meta" style="background-image: url(images/img1.jpg)">
-                   <a href="metaverse.html" target="_blank"> <div class="overlay" >  Metaverso </div> </a>
-                </div>
-                <div class="img-port" id="SCGA" style="background-image: url(images/img2.jpg)">
+                <article class="img-port" id="Meta" style="background-image: url(images/img1.jpg)">
+                   <a href="metaverse.html" target="_blank"> <div class="overlay" data-i18n="metaverse-desc">  Metaverso </div> </a>
+                </article>
+                <article class="img-port" id="SCGA" style="background-image: url(images/img2.jpg)">
                   <a href="scga.html" target="_blank"> <div class="overlay" >  SCGA </div> </a>
-               </div>
-               <div class="img-port" id="mini-projects" style="background-image: url(images/img3.jpg)">
-                <a href="otherProjs.html" target="_blank"> <div class="overlay" >  Outros </div> </a>
-             </div>
+               </article>
+               <article class="img-port" id="mini-projects" style="background-image: url(images/img3.jpg)">
+                <a href="otherProjs.html" target="_blank"> <div class="overlay" data-i18n="other-desc">  Outros </div> </a>
+             </article>
             </div>
 
         </div>
@@ -203,14 +203,14 @@
 
     <section class="formulario" id="form">
         <div class="interface">
-                <h2 class="titulo">FALA <span>COMIGO</span></h1>
+                <h2 class="titulo" data-i18n="contact-me">FALA <span>COMIGO</span></h1>
                 <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSc2nzxbTZSPY1kd6aEmlgAMjZFJLViLXFWs4B2ULzencGSB2A/formResponse">
                     
-                    <input type="email" class="inputs" id="" placeholder="Seu e-mail" name="emailAddress" required>
-                    <input type="text" class="inputs" id="" placeholder="Seu nome" name="entry.1959668680" required>
-                    <input type="tel" class="inputs" id="" placeholder="Seu celular" name="entry.808120212">
-                    <textarea type="text" class="inputs" id="" placeholder="Sua mensagem" name="entry.716814058" required></textarea>
-                    <div class="btn-enviar"> <input type="submit" value="ENVIAR"></button> </div>
+                    <input type="email" class="inputs" id="" placeholder="Seu e-mail" name="emailAddress" data-i18n="form-email" required>
+                    <input type="text" class="inputs" id="" placeholder="Seu nome" name="entry.1959668680" data-i18n="form-name" required>
+                    <input type="tel" class="inputs" id="" placeholder="Seu celular" name="entry.808120212" data-i18n="form-cell">
+                    <textarea type="text" class="inputs" id="" placeholder="Sua mensagem" name="entry.716814058" data-i18n="form-message" required></textarea>
+                    <div class="btn-enviar"> <input type="submit" value="ENVIAR" data-i18n="form-submit"></button> </div>
                     
                 </form>
         </div>

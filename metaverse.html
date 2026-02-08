@@ -21,6 +21,7 @@
 
 <body>
   <header>
+    
     <div class="interface">
       <div class="logo">
         <a href="index.html">
@@ -29,10 +30,10 @@
       </div>
       <nav class="menu-desktop">
         <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#especialidades">Especialidades</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#portfolio">Projetos</a></li>
+          <li><a href="#inicio" data-i18n="item-desktop1">Início</a></li>
+          <li><a href="#especialidades" data-i18n="item-desktop2">Especialidades</a></li>
+          <li><a href="#sobre" data-i18n="item-desktop3">Sobre</a></li>
+          <li><a href="#portfolio" data-i18n="item-desktop4">Projetos</a></li>
           <li class="nav-item">
             <input type="checkbox" id="dark-change" onclick="toggleDarkMode()">
             <label for="dark-change">
@@ -42,9 +43,9 @@
           </li>
             <li>
               <select id="slcDesk">
-                <option value="pt-br">pt-br</option>
-                <option value="eng">Inglês</option>
-                <option value="spn">Espanhol</option>
+                <option value="pt-br" data-i18n="lg-ptbr">pt-br</option>
+                <option value="eng" data-i18n="lg-eng">Inglês</option>
+                <option value="spn" data-i18n="lg-spn">Espanhol</option>
               </select>
             </li>
          </ul>
@@ -52,7 +53,7 @@
       </nav>
       <div class="btn-contato">
         <a href="#form">
-          <button>Contato</button>
+          <button data-i18n="button-desktop">Contato</button>
         </a>
       </div>
 
@@ -65,11 +66,11 @@
         </div>
         <nav>
             <ul>
-              <li class="click"><a href="#inicio">Início</a></li>
-              <li class="click"><a href="#especialidades">Especialidades</a></li>
-              <li class="click"><a href="#sobre">Sobre</a></li>
-              <li class="click"><a href="#portfolio">Projetos</a></li>
-              <li class="click"><a href="#form">Contato</a></li>
+              <li class="click"><a href="#inicio" data-i18n="item-mobile1">Início</a></li>
+              <li class="click"><a href="#especialidades" data-i18n="item-mobile2">Especialidades</a></li>
+              <li class="click"><a href="#sobre" data-i18n="item-mobile3">Sobre</a></li>
+              <li class="click"><a href="#portfolio" data-i18n="item-mobile4">Projetos</a></li>
+              <li class="click"><a href="#form" data-i18n="button-mobile">Contato</a></li>
               <li class="nav-item click">
                 <input type="checkbox" id="dark-change" onclick="toggleDarkMode()">
                 <label for="dark-change">
@@ -79,9 +80,9 @@
               </li>
               <li>
                 <select id="slcMb">
-                  <option value="pt-br">pt-br</option>
-                  <option value="eng">Inglês</option>
-                  <option value="spn">Espanhol</option>
+                  <option value="pt-br" data-i18n="lg-ptbr">pt-br</option>
+                  <option value="eng" data-i18n="lg-eng">Inglês</option>
+                  <option value="spn" data-i18n="lg-spn">Espanhol</option>
                 </select>
               </li>
             </ul>
@@ -104,15 +105,9 @@
                     <br>
                     O site estático (Desenvolvido por mim e com o auxílio de conteúdo por ele) desse repo serve justamente para ainda demonstrar essa imersão no mundo virtual mesmo após a apresentação e ser um belo complemento para caso o usuário se interesse, possa realizar ou tentar fazer essa experiência em sua casa
                 </p>
-                
                   <div class="flex">
                       <img src="images/metaverse.png" alt="">
-                      
                   </div>
-
-                  
-
-          
       </div>
     </section>
 
@@ -120,19 +115,19 @@
         <div class="interface">
             <h2 class="titulo">PROPRIEDADES DO <span>PROJETO </span></h2>
             <div class="flex">
-                <div class="especialidades-box" id="backend">
+                <article class="especialidades-box" id="backend">
                     <i class="bi bi-database"></i>
                     <h3>FrontEnd do site e utilitários</h3>
                     <p>Foi utilizado especialmente o HTML (HyperText Markup Language), CSS (Cascading Style Sheet) e JS (JavaScript) para o desenvolvimento respectivo da estrutura, estilização e interação dinâmica do sistema e das ações dele
                         <br>
                         <p>De framework existe o Materialize (Framework CSS), utilitários sites para fonte dos textos que infelizmente acabei não salvando, Gimp para edição de imagens e Google Forms para os formulários do site </p>
                     </p>
-                </div>
-                <div class="especialidades-box" id="edition">
+                </article>
+                <article class="especialidades-box" id="edition">
                     <i class="bi bi-pen"></i>
                     <h3>Aplicativo VR Metaverso </h3>
                     <p>Pelo Thiago foi utilizado a Unity, Google CardBoard e Blender (lembrando, foi mostrado somente pelo apresentação, mas gostaria de creditar ainda assim essa parte para ele)</p>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -143,12 +138,12 @@
             <h2 class="titulo">IMAGENS DO <span>PROJETO.</span></h2>
             <div class="flex">
                 <!--1920 x 6137-->
-                <div class="img-port" id="Meta" style="background-image: url(images/metaverse1.jpg)">
+                <article class="img-port" id="Meta" style="background-image: url(images/metaverse1.jpg)">
                    <a href="https://GustavoPereira-Dev.github.io/FeiraTecnologicaCPS" target="_blank"> <div class="overlay" >  Explicações e tutoriais </div> </a>
-                </div>
-                <div class="img-port" id="SCGA" style="background-image: url(images/metaverse2.jpg)">
+                </article>
+                <article class="img-port" id="SCGA" style="background-image: url(images/metaverse2.jpg)">
                   <a href="https://GustavoPereira-Dev.github.io/FeiraTecnologicaCPS" target="_blank"> <div class="overlay">Avaliação do Site e sobre o projeto </div> </a>
-               </div>
+               </article>
             </div>
 
         </div>

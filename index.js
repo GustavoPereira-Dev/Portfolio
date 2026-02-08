@@ -1,4 +1,4 @@
-//import {translate} from "./language.js";
+import { translate } from "./language.js";
 
 // Tela Mobile
 let btnMenu = document.getElementById("btn-menu");
@@ -57,9 +57,7 @@ const logoFooter = document.querySelector("#img_footer");
 
 
 //linguagem
-const selectDesktop = document.querySelector("#slcDesk");
-const selectMobile = document.querySelector("#slcMb");
-const select = window.matchMedia('(min-width: 1200px)').matches ? selectDesktop : selectMobile;
+const selects = document.querySelectorAll("select");
 
 
 
@@ -84,10 +82,9 @@ document.addEventListener('DOMContentLoaded', function() {
   changeMode(localStorage.getItem('lightMode') !== 'true');
 
   
-  if(localStorage.getItem('language')){
-    select.value = localStorage.getItem('language');
-    translate(select.value);
-  }
+  const savedLang = localStorage.getItem('language') || 'pt-br';
+  selects.forEach(s => s.value = savedLang);
+  translate(savedLang);
  
    
 });
@@ -124,11 +121,14 @@ function changeMode(isDarkMode){
 }
 
 //listener de mudança de linguagem
-select.addEventListener("change", () =>{
-  translate(select.value);
-  localStorage.setItem('language', select.value);
-  menu.classList.remove("abrir-menu");
-})
+selects.forEach(select => {
+  select.addEventListener("change", (e) => {
+      const lang = e.target.value;
+      translate(lang);
+      localStorage.setItem('language', lang);
+      selects.forEach(s => s.value = lang); // Sincroniza todos os selects
+  });
+});
 
 /**
  * // Obtém o caminho completo do arquivo

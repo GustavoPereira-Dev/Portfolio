@@ -29,10 +29,10 @@
       </div>
       <nav class="menu-desktop">
         <ul>
-          <li><a href="#inicio">Início</a></li>
-          <li><a href="#especialidades">Especialidades</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#portfolio">Projetos</a></li>
+          <li><a href="#inicio" data-i18n="item-desktop1">Início</a></li>
+          <li><a href="#especialidades" data-i18n="item-desktop2">Especialidades</a></li>
+          <li><a href="#sobre" data-i18n="item-desktop3">Sobre</a></li>
+          <li><a href="#portfolio" data-i18n="item-desktop4">Projetos</a></li>
           <li class="nav-item">
             <input type="checkbox" id="dark-change" onclick="toggleDarkMode()">
             <label for="dark-change">
@@ -42,9 +42,9 @@
           </li>
             <li>
               <select id="slcDesk">
-                <option value="pt-br">pt-br</option>
-                <option value="eng">Inglês</option>
-                <option value="spn">Espanhol</option>
+                <option value="pt-br" data-i18n="lg-ptbr">pt-br</option>
+                <option value="eng" data-i18n="lg-eng">Inglês</option>
+                <option value="spn" data-i18n="lg-spn">Espanhol</option>
               </select>
             </li>
          </ul>
@@ -52,7 +52,7 @@
       </nav>
       <div class="btn-contato">
         <a href="#form">
-          <button>Contato</button>
+          <button data-i18n="button-desktop">Contato</button>
         </a>
       </div>
 
@@ -65,11 +65,11 @@
         </div>
         <nav>
             <ul>
-              <li class="click"><a href="#inicio">Início</a></li>
-              <li class="click"><a href="#especialidades">Especialidades</a></li>
-              <li class="click"><a href="#sobre">Sobre</a></li>
-              <li class="click"><a href="#portfolio">Projetos</a></li>
-              <li class="click"><a href="#form">Contato</a></li>
+              <li class="click"><a href="#inicio" data-i18n="item-mobile1">Início</a></li>
+              <li class="click"><a href="#especialidades" data-i18n="item-mobile2">Especialidades</a></li>
+              <li class="click"><a href="#sobre" data-i18n="item-mobile3">Sobre</a></li>
+              <li class="click"><a href="#portfolio" data-i18n="item-mobile4">Projetos</a></li>
+              <li class="click"><a href="#form" data-i18n="button-mobile">Contato</a></li>
               <li class="nav-item click">
                 <input type="checkbox" id="dark-change" onclick="toggleDarkMode()">
                 <label for="dark-change">
@@ -79,9 +79,9 @@
               </li>
               <li>
                 <select id="slcMb">
-                  <option value="pt-br">pt-br</option>
-                  <option value="eng">Inglês</option>
-                  <option value="spn">Espanhol</option>
+                  <option value="pt-br" data-i18n="lg-ptbr">pt-br</option>
+                  <option value="eng" data-i18n="lg-eng">Inglês</option>
+                  <option value="spn" data-i18n="lg-spn">Espanhol</option>
                 </select>
               </li>
             </ul>
@@ -124,26 +124,26 @@
         <div class="interface">
             <h2 class="titulo">PROPRIEDADES DO <span>PROJETO </span></h2>
             <div class="flex">
-                <div class="especialidades-box" id="backend">
+                <article class="especialidades-box" id="backend">
                     <i class="bi bi-database"></i>
                     <h3>Desenvolvimento BackEnd e de banco</h3>
                     <p>Banco de dados: Não relacional (NoSQL ou Not only SQL) Firebase (especificamente as ferramentas Firestore, Realtime Database e Storage)
                         <br>
                         Linguagem: PHP e seu framework Laravel para o backend em especial da conexão dos usuários (Login, Cadastro, Esqueci senha, controle de sessão, etc.)
                     </p>
-                </div>
-                <div class="especialidades-box" id="frontend">
+                </article>
+                <article class="especialidades-box" id="frontend">
                   <i class="bi bi-code-square"></i>
                   <h3>Desenvolvimento Web <br> e Client-Side</h3>
                   <p>  Foi utilizado especialmente o HTML (HyperText Markup Language), CSS (Cascading Style Sheet) e JS (JavaScript) para o desenvolvimento respectivo da estrutura, estilização e interação dinâmica do sistema e das ações dele
                     <br>
                     <p>De framework existe o Bootstrap (Framework CSS) e de APIs o FullCalendar (para uma funcionalidade que envolve calendários) e o DialogFlow (o suporte do chatbot)</p>
-              </div>
-                <div class="especialidades-box" id="edition">
+              </article>
+                <article class="especialidades-box" id="edition">
                     <i class="bi bi-pen"></i>
                     <h3>Outros utilitários</h3>
                     <p>Aplicativo Astah (para diagramação), Figma (prototipação inicial), Gimp (edição de imagens), Firebase Authentication (autenticação de usuários)</p>
-                </div>
+                </article>
             </div>
         </div>
     </section>
@@ -154,15 +154,15 @@
             <h2 class="titulo">IMAGENS DO <span>PROJETO.</span></h2>
             <div class="flex">
                 <!--1920 x 6137-->
-                <div class="img-port" id="Meta" style="background-image: url(images/scga1.jpg)">
+                <article class="img-port" id="Meta" style="background-image: url(images/scga1.jpg)">
                    <a href="https://github.com/GustavoPereira-Dev/SCGA" target="_blank"> <div class="overlay" >  Autenticação e Dashboard </div> </a>
-                </div>
-                <div class="img-port" id="SCGA" style="background-image: url(images/scga2.jpg)">
+                </article>
+                <article class="img-port" id="SCGA" style="background-image: url(images/scga2.jpg)">
                   <a href="https://github.com/GustavoPereira-Dev/SCGA" target="_blank"> <div class="overlay" >  Agendamento e Perfil </div> </a>
-               </div>
-               <div class="img-port" id="mini-projects" style="background-image: url(images/scga3.jpg)">
+               </article>
+               <article class="img-port" id="mini-projects" style="background-image: url(images/scga3.jpg)">
                 <a href="https://github.com/GustavoPereira-Dev/SCGA" target="_blank"> <div class="overlay" >  Mapeamento, Reporte e Suporte </div> </a>
-             </div>
+             </article>
             </div>
 
         </div>
