@@ -18,7 +18,7 @@ export const translations = {
       "contact": "Entre em contato",
       "title-specialties": "MINHAS <span>ESPECIALIDADES</span>",
       "backend-title": "Desenvolvimento BackEnd e de banco",
-      "backend-desc": `Conhecimento de conexão de banco de dados NoSQL (Firebase) e SQL (MySQL, MariaDb, Postgresql) e em linguagens como PHP (com Laravel), Java (JavaFX, Swing e Conexão SQL), C# e Python, todos com uma compreensão altamente embassada da lógica de programação`,
+      "backend-desc": `Conhecimento de conexão de banco de dados NoSQL (Firebase, MongoDB) e SQL (MySQL, MariaDb, Postgresql, SQLServer, SQLite), em ORMs e em linguagens como PHP (Laravel), Java (JavaFX, Swing, Spring, Hibernate, JUnit), Kotlin (Android Studio, Jetpack Compose, Navigation Component), Node (Next.js, Express.js), C# (.NET, Nuget, xUnit), C++, Python, COBOL, todos com uma compreensão altamente embassada da lógica de programação`,
       "frontend-title": "Desenvolvimento Web <br> e Client-Side",
       "frontend-desc": `Conhecimento intermediário <br> em HTML/CSS/JS e frameworks/bibliotecas<br>(Bootstrap,Materialize,React,Next[...])`,
       "edition-title": "Edição",
