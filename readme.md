@@ -20,7 +20,7 @@ Este é um site estático, responsivo e interativo, construído com tecnologias 
     *   *Metaverse*: Projeto focado em Realidade Virtual.
     *   *SCGA*: Sistema de Controle e Gerenciamento de Ambientes (TCC).
     *   *Outros Projetos*: Listagem de exercícios e projetos menores.
-
+    *   *Fatec*: Repositório com todas as atividades e projetos desenvolvidos na Fatec.
 ---
 
 ## 🛠️ Tecnologias Utilizadas
