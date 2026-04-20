@@ -278,6 +278,30 @@ section.especialidades .flex{
     margin: 15px 0;
 }
 
+/* Tags de Projetos (otherProjs.html) */
+.projetos-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+.projetos-tags a {
+    display: inline-block;
+    background-color: var(--azul1);
+    color: var(--preto_escuro);
+    padding: 5px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.projetos-tags a:hover {
+    background-color: var(--branco);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px var(--azul1);
+}
+
 /*Sobre*/
 section.sobre{
     padding: 80px 4%;

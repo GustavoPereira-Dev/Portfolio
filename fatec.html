@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!--G Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <!--Fim G Fonts-->
+  
+  <link rel="shortcut icon" href="images/logo1.png" type="image/x-icon">
+  <title>Portfolio GPa</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="style.css" rel="stylesheet" />
+  
+  <script type="module" src="index.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="interface">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo1.png" id="img_nav" alt="logo GPa"/>
+        </a>
+      </div>
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="#inicio" data-i18n="fatec-item-desktop1">Introdução Fatec ADS</a></li>
+          <li><a href="#especialidades" data-i18n="fatec-item-desktop2">Principais Conhecimentos</a></li>
+          <li><a href="#projetos-atividades" data-i18n="fatec-item-desktop3">Projetos e Atividades</a></li>
+          <li class="nav-item">
+            <input type="checkbox" id="dark-change" onclick="toggleDarkMode()">
+            <label for="dark-change">
+                <i class='nav-link bi bi-sun'></i>
+                <i class='nav-link bi bi-moon'></i>   
+            </label>
+          </li>
+            <li>
+              <select id="slcDesk">
+                <option value="pt-br" data-i18n="lg-ptbr">pt-br</option>
+                <option value="eng" data-i18n="lg-eng">Inglês</option>
+                <option value="spn" data-i18n="lg-spn">Espanhol</option>
+              </select>
+            </li>
+         </ul>
+        
+      </nav>
+      <div class="btn-contato">
+        <a href="index.html#form">
+          <button data-i18n="button-desktop">Contato</button>
+        </a>
+      </div>
+
+      <div class="btn-abrir-menu" id="btn-menu">
+        <i class="bi bi-list"></i>
+      </div>
+      <div class="menu-mobile" id="menu">
+        <div class="btn-fechar">
+            <i class="bi bi-x-lg"></i>
+        </div>
+        <nav>
+            <ul>
+              <li class="click"><a href="#inicio" data-i18n="fatec-item-mobile1">Introdução Fatec ADS</a></li>
+              <li class="click"><a href="#especialidades" data-i18n="fatec-item-mobile2">Principais Conhecimentos</a></li>
+              <li class="click"><a href="#projetos-atividades" data-i18n="fatec-item-mobile3">Projetos e Atividades</a></li>
+              <li class="nav-item click">
+                <input type="checkbox" id="dark-change" onclick="toggleDarkMode()">
+                <label for="dark-change">
+                    <i class='nav-link bi bi-sun'></i>
+                    <i class='nav-link bi bi-moon'></i>   
+                </label>
+              </li>
+              <li>
+                <select id="slcMb">
+                  <option value="pt-br" data-i18n="lg-ptbr">pt-br</option>
+                  <option value="eng" data-i18n="lg-eng">Inglês</option>
+                  <option value="spn" data-i18n="lg-spn">Espanhol</option>
+                </select>
+              </li>
+            </ul>
+          </nav>
+      </div>
+      <div class="overlay-menu" id="overlay">
+
+      </div>
+    </div>
+    
+  </header>
+
+  <main>
+    <section class="topo-do-site" id="inicio">
+      <div class="interface">
+          <div class="flex">
+            <div class="txt-topo-site">                  
+                <h1 data-i18n="fatec-hero-title">INTRODUÇÃO <span>FATEC ADS.</span></h1>
+                <p data-i18n="fatec-hero-desc">Nesta página, apresento um compilado dos principais conhecimentos, linguagens e projetos práticos que venho desenvolvendo durante minha jornada acadêmica no curso de Análise e Desenvolvimento de Sistemas (ADS) na Faculdade de Tecnologia (Fatec).
+                    <br><br>
+                    Todo o código-fonte, trabalhos de Engenharia de Software e evolução contínua estão versionados e documentados no repositório <a href="https://github.com/GustavoPereira-Dev/Projs-Fatec-ADS" target="_blank" rel="noopener noreferrer" style="color: var(--azul1); font-weight: bold;">Projs-Fatec-ADS</a> no GitHub.
+                </p>
+                  <div class="flex">
+                      <img src="images/fatec.png" alt="Projs-Fatec-ADS" style="max-width: 100%; border-radius: 20px;">
+                  </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="especialidades" id="especialidades">
+        <div class="interface">
+            <h2 class="titulo" data-i18n="fatec-spec-title">PRINCIPAIS <span>CONHECIMENTOS</span></h2>
+            <div class="flex">
+                <article class="especialidades-box" id="backend">
+                    <i class="bi bi-code-slash"></i>
+                    <h3 data-i18n="fatec-lang-title">Linguagens de Programação</h3>
+                    <p data-i18n="fatec-lang-desc">Experiência prática desenvolvida em disciplinas com linguagens como C, C++, Java, Python, C#, COBOL e JavaScript. Forte base em Lógica de Programação, Estrutura de Dados e paradigmas como a Orientação a Objetos (POO).</p>
+                </article>
+                <article class="especialidades-box" id="frontend">
+                  <i class="bi bi-database"></i>
+                  <h3 data-i18n="fatec-db-title">Banco de Dados</h3>
+                  <p data-i18n="fatec-db-desc">Modelagem, normalização e implementação de Bancos de Dados Relacionais e Não Relacionais utilizando linguagem SQL em sistemas como MySQL e PostgreSQL, além da integração com APIs.</p>
+              </article>
+                <article class="especialidades-box" id="edition">
+                    <i class="bi bi-braces"></i>
+                    <h3 data-i18n="fatec-eng-title">Engenharia de Software</h3>
+                    <p data-i18n="fatec-eng-desc">Noções sólidas de Engenharia de Sistemas, documentação e modelagem de diagramas UML, uso de Padrões de Projeto (Design Patterns), Metodologias Ágeis e Testes de Software para o ciclo de vida do desenvolvimento.</p>
+                </article>
+            </div>
+            <div class="flex">
+                <article class="especialidades-box" id="devops">
+                    <i class="bi bi-box-seam"></i>
+                    <h3 data-i18n="fatec-fw-title">Frameworks e Bibliotecas</h3>
+                    <p data-i18n="fatec-fw-desc">Uso prático de frameworks e bibliotecas essenciais para o desenvolvimento de aplicações e análise de dados, com destaque para Spring Boot, JUnit (testes automatizados) e Pandas.</p>
+                </article>
+                <article class="especialidades-box" id="dados">
+                    <i class="bi bi-tools"></i>
+                    <h3 data-i18n="fatec-tools-title">Ferramentas e Softwares</h3>
+                    <p data-i18n="fatec-tools-desc">Proficiência no uso de ambientes de desenvolvimento e ferramentas de modelagem/simulação, como Eclipse, VSCode, Visual Paradigm, Cisco Packet Tracer, VMWare, ProjectLibre e GeoGebra.</p>
+                </article>
+                <article class="especialidades-box" id="ai">
+                    <i class="bi bi-bar-chart-line"></i>
+                    <h3 data-i18n="fatec-others-title">Outros Conhecimentos</h3>
+                    <p data-i18n="fatec-others-desc">Embasamento multidisciplinar em áreas complementares, incluindo Estatística, Lógica Matemática, Sistemas Operacionais, Arquitetura de Computadores e Redes.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+    
+    <section class="topo-do-site" id="projetos-atividades">
+      <div class="interface">
+        <div class="txt-topo-site">     
+          <h2 class="titulo" data-i18n="fatec-proj-title">PROJETOS E <span>ATIVIDADES</span></h2>
+          <div class="flex">
+              <p data-i18n="fatec-proj-desc">
+                  <span>Estruturas de Dados:</span> Implementação do zero de pilhas, filas, listas encadeadas, árvores binárias e algoritmos complexos de ordenação em C e Java.
+                  <br><br>
+                  <span>POO e Interfaces:</span> Sistemas acadêmicos construídos em Java (usando Swing para interfaces gráficas) e C# aplicando conceitos absolutos de herança, polimorfismo e encapsulamento.
+                  <br><br>
+                  <span>Desenvolvimento Web:</span> Interfaces responsivas com HTML5, CSS3 e JavaScript visando componentização e interação com o lado do servidor.
+                  <br><br>
+                  <span>Projetos Interdisciplinares:</span> Trabalhos unindo Arquitetura de Software, Modelagem SQL e Back-end para simular sistemas de gerenciamento realistas aplicados em negócios.
+                  <br><br><br>
+                  <a href="https://github.com/GustavoPereira-Dev/Projs-Fatec-ADS" target="_blank" rel="noopener noreferrer" style="font-weight: bold; text-decoration: underline; color: var(--azul1);">
+                    Acessar Repositório Completo no GitHub <i class="bi bi-box-arrow-up-right"></i>
+                  </a>
+              </p>
+           </div>
+        </div>
+      </div>
+  </section>
+
+  </main>
+
+  <footer>
+    <div class="interface">
+        <div class="line-footer">
+           <div class="flex">
+                <div class="logo-footer">
+                    <img src="images/logo1.png" id="img_footer" alt="logo GPa">
+                </div>
+                <div class="btn-social">
+                    <a href="https://github.com/GustavoPereira-Dev"> <button> <i class="bi bi-github"></i></button></a>
+                    <a href="https://www.linkedin.com/in/gustavo-pereira-834313260/"> <button> <i class="bi bi-linkedin"></i></button></a>
+                    <a href="https://linktr.ee/gustavohenriquepereira"> <button> <i class="bi bi-link-45deg"></i></button></a>
+                    <a href="https://www.hackerrank.com/profile/gustavopereira81"> <button> <i class="bi bi-award"></i></button></a>
+                    <a href="https://dio.me/users/gustavohenrique10002"> <button> <i class="bi bi-star"></i></button></a>
+                </div>
+           </div>
+        </div>
+
+        
+        <div class="line-footer borda">
+            <p><i class="bi bi-envelope-fill"></i><a href="mailto:gustavopereiradev53@gmail.com">gustavopereiradev53@gmail.com </a></p>
+        </div>
+    </div>
+  </footer>
+</body>
+
+</html>
